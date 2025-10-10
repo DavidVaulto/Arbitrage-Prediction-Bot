@@ -1,0 +1,5 @@
+[console_scripts]
+pm-arb-backtest = src.scripts.backtest_cli:main
+pm-arb-discovery = src.scripts.run_discovery:main
+pm-arb-live = src.scripts.run_live:main
+pm-arb-paper = src.scripts.run_paper:main

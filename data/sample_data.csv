@@ -1,0 +1,9 @@
+timestamp,venue,contract_id,event_key,yes_bid,yes_ask,yes_bid_size,yes_ask_size,no_bid,no_ask,no_bid_size,no_ask_size,settlement_ccy,expires_at
+2024-01-01T00:00:00Z,polymarket,event1,Will Biden win 2024 election?,0.45,0.47,100,100,0.53,0.55,100,100,USDC,2024-11-05T00:00:00Z
+2024-01-01T00:00:00Z,kalshi,event1,Biden wins 2024 election,0.48,0.50,100,100,0.50,0.52,100,100,USD,2024-11-05T00:00:00Z
+2024-01-01T00:01:00Z,polymarket,event1,Will Biden win 2024 election?,0.46,0.48,100,100,0.52,0.54,100,100,USDC,2024-11-05T00:00:00Z
+2024-01-01T00:01:00Z,kalshi,event1,Biden wins 2024 election,0.49,0.51,100,100,0.49,0.51,100,100,USD,2024-11-05T00:00:00Z
+2024-01-01T00:02:00Z,polymarket,event1,Will Biden win 2024 election?,0.47,0.49,100,100,0.51,0.53,100,100,USDC,2024-11-05T00:00:00Z
+2024-01-01T00:02:00Z,kalshi,event1,Biden wins 2024 election,0.50,0.52,100,100,0.48,0.50,100,100,USD,2024-11-05T00:00:00Z
+
+

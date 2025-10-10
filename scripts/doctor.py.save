@@ -1,0 +1,22 @@
+import json, os, sys, importlib
+
+result = {
+    "python": "ok" if sys.version_info >= (3,11) else f"need>=3.11 got {sys.version}",
+    "env": "ok" if os.path.exists(".env") else "missing",
+    "modules": {},
+    "db": "n/a",
+}
+
+# Check a couple of core modules
+for mod in ["src.core.config", "src.core.health"]:
+    try:
+        importlib.import_module(mod)
+        result["modules"][mod] = "ok"
+    except Exception as e:
+        result["modules"][mod] = f"error: {e.__class__.__name__}: {e}"
+
+# Check if default SQLite file exists
+result["db"] = "ok" if os.path.exists("pm_arb.db") else "missing_or_not_created_yet"
+
+print(json.dumps(result, indent=2))
+
