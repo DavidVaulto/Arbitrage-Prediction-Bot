@@ -1,0 +1,33 @@
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data files
+data/
+*.parquet
+*.csv
+
+# Database files
+*.db
+*.sqlite
+
+# IDE and system files
+.DS_Store
+.vscode/
+.idea/
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
