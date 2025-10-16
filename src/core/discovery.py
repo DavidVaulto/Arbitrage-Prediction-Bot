@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 from datetime import datetime
 
+from .event_registry import EventRegistry
 from .fees import FeeCalculator
 from .matcher import EventMatcher
 from .odds import (
@@ -21,6 +22,7 @@ from .types import (
     Quote,
     Venue,
 )
+from .venue_mappers import KalshiMapper, PolymarketMapper
 
 
 class DiscoveryEngine:
@@ -30,29 +32,48 @@ class DiscoveryEngine:
         self,
         fee_calculator: FeeCalculator,
         event_matcher: EventMatcher,
+        event_registry: EventRegistry | None = None,
         min_edge_bps: float = 80.0,
         min_notional_usd: float = 100.0,
         max_slippage_bps: float = 25.0,
+        use_deterministic_mapping: bool = True,
     ):
         """Initialize discovery engine.
         
         Args:
             fee_calculator: Fee calculator for cost estimation
-            event_matcher: Event matcher for cross-venue matching
+            event_matcher: Event matcher for cross-venue matching (fallback)
+            event_registry: Event registry for deterministic mapping
             min_edge_bps: Minimum edge in basis points
             min_notional_usd: Minimum notional size in USD
             max_slippage_bps: Maximum slippage tolerance in basis points
+            use_deterministic_mapping: Use registry-based deterministic mapping
         """
         self.fee_calculator = fee_calculator
         self.event_matcher = event_matcher
         self.min_edge_bps = min_edge_bps
         self.min_notional_usd = min_notional_usd
         self.max_slippage_bps = max_slippage_bps
+        self.use_deterministic_mapping = use_deterministic_mapping
+
+        # Event registry and mappers
+        self.event_registry = event_registry or EventRegistry()
+        self.venue_mappers = {
+            Venue.POLYMARKET: PolymarketMapper(self.event_registry),
+            Venue.KALSHI: KalshiMapper(self.event_registry),
+        }
 
         # Cache for contracts and quotes
         self._contracts_cache: dict[Venue, list[Contract]] = {}
         self._quotes_cache: dict[str, Quote] = {}
         self._last_update: dict[Venue, datetime] = {}
+        
+        # Track mapping statistics
+        self._mapping_stats = {
+            "total_markets": 0,
+            "mapped_markets": 0,
+            "abstained_markets": 0,
+        }
 
     async def discover_opportunities(
         self,
@@ -102,7 +123,41 @@ class DiscoveryEngine:
         """Fetch contracts from a single venue."""
         try:
             contracts = await connector.list_contracts()
-            self._contracts_cache[venue] = contracts
+            
+            # Map contracts to canonical event IDs if using deterministic mapping
+            if self.use_deterministic_mapping:
+                mapped_contracts = []
+                mapper = self.venue_mappers.get(venue)
+                
+                for contract in contracts:
+                    self._mapping_stats["total_markets"] += 1
+                    
+                    if mapper:
+                        # Try to map to canonical event ID
+                        event_id = mapper.map_to_event_id(
+                            market_id=contract.normalized_event_id,
+                            title=contract.event_key,
+                            description="",
+                            metadata={"close_time": contract.expires_at},
+                        )
+                        
+                        if event_id:
+                            # Update contract with canonical event ID
+                            contract.normalized_event_id = event_id
+                            mapped_contracts.append(contract)
+                            self._mapping_stats["mapped_markets"] += 1
+                        else:
+                            # Abstain - don't include unmapped contracts
+                            self._mapping_stats["abstained_markets"] += 1
+                    else:
+                        # No mapper for venue, include as-is
+                        mapped_contracts.append(contract)
+                
+                self._contracts_cache[venue] = mapped_contracts
+            else:
+                # Use legacy matcher
+                self._contracts_cache[venue] = contracts
+            
             self._last_update[venue] = datetime.utcnow()
         except Exception as e:
             print(f"Failed to fetch contracts from {venue}: {e}")
@@ -118,7 +173,12 @@ class DiscoveryEngine:
         contracts_a = self._contracts_cache[venue_a]
         contracts_b = self._contracts_cache[venue_b]
 
-        return self.event_matcher.match_events(contracts_a, contracts_b)
+        if self.use_deterministic_mapping:
+            # Use deterministic event_id matching
+            return self._match_by_event_id(contracts_a, contracts_b)
+        else:
+            # Use legacy fuzzy matching
+            return self.event_matcher.match_events(contracts_a, contracts_b)
 
     async def _refresh_quotes(
         self,
@@ -370,16 +430,89 @@ class DiscoveryEngine:
 
         return filtered
 
+    def _match_by_event_id(
+        self,
+        contracts_a: list[Contract],
+        contracts_b: list[Contract],
+    ) -> list[any]:  # MatchedPair
+        """Match contracts by canonical event_id (deterministic).
+        
+        Args:
+            contracts_a: Contracts from venue A
+            contracts_b: Contracts from venue B
+            
+        Returns:
+            List of matched pairs
+        """
+        from .types import MatchedPair
+        
+        matched_pairs = []
+        
+        # Group contracts by event_id
+        events_a: dict[str, list[Contract]] = {}
+        for contract in contracts_a:
+            event_id = contract.normalized_event_id
+            if event_id not in events_a:
+                events_a[event_id] = []
+            events_a[event_id].append(contract)
+        
+        events_b: dict[str, list[Contract]] = {}
+        for contract in contracts_b:
+            event_id = contract.normalized_event_id
+            if event_id not in events_b:
+                events_b[event_id] = []
+            events_b[event_id].append(contract)
+        
+        # Find matching event_ids
+        common_event_ids = set(events_a.keys()) & set(events_b.keys())
+        
+        for event_id in common_event_ids:
+            contracts_a_group = events_a[event_id]
+            contracts_b_group = events_b[event_id]
+            
+            # Create matched pairs for YES/NO contracts
+            yes_a = next((c for c in contracts_a_group if c.side.value == "YES"), None)
+            no_a = next((c for c in contracts_a_group if c.side.value == "NO"), None)
+            yes_b = next((c for c in contracts_b_group if c.side.value == "YES"), None)
+            no_b = next((c for c in contracts_b_group if c.side.value == "NO"), None)
+            
+            if yes_a and yes_b:
+                matched_pairs.append(MatchedPair(
+                    event_id=event_id,
+                    contract_a=yes_a,
+                    contract_b=yes_b,
+                    confidence_score=1.0,
+                    match_reason="deterministic_event_id_yes",
+                ))
+            
+            if no_a and no_b:
+                matched_pairs.append(MatchedPair(
+                    event_id=event_id,
+                    contract_a=no_a,
+                    contract_b=no_b,
+                    confidence_score=1.0,
+                    match_reason="deterministic_event_id_no",
+                ))
+        
+        return matched_pairs
+
     def get_discovery_stats(self) -> dict[str, any]:
         """Get discovery statistics."""
         total_contracts = sum(len(contracts) for contracts in self._contracts_cache.values())
         total_quotes = len(self._quotes_cache)
 
-        return {
+        stats = {
             "total_contracts": total_contracts,
             "total_quotes": total_quotes,
             "venues_connected": len(self._contracts_cache),
             "last_update": self._last_update,
         }
+        
+        # Add mapping statistics if using deterministic mapping
+        if self.use_deterministic_mapping:
+            stats["mapping_stats"] = self._mapping_stats
+            stats["registry_stats"] = self.event_registry.get_coverage_stats()
+        
+        return stats
 
 
