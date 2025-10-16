@@ -1,0 +1,22 @@
+/Users/davidandonovski/Desktop/Prediciton Markets Algo Model/scripts/monitor_and_analyze.py:128: FutureWarning: 'S' is deprecated and will be removed in a future version, please use 's' instead.
+  mapped_df['ts_bucket'] = pd.to_datetime(mapped_df['timestamp']).dt.floor('5S')
+
+🔬 Analyzing data for arbitrage opportunities...
+   Loading: data/discovery_20251016_130024.parquet
+   Loaded 25,400 rows
+
+📍 Mapping markets to canonical events...
+   Total markets: 25,400
+   Mapped: 2,032 (8.0%)
+   Abstained: 23,368
+
+🔍 Searching for cross-venue arbitrage opportunities...
+   Cross-venue pairs checked: 2032
+   Arbitrage opportunities found: 0
+
+💡 No arbitrage opportunities found with edge > 50 bps
+   This could mean:
+   - Markets are efficiently priced
+   - Fees consume potential edges
+   - Need longer collection period
+   - Try lower edge threshold

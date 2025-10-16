@@ -1,0 +1,476 @@
+Initialized data file: data/discovery_20251016_130024.parquet
+Using real discovery with public APIs
+Recording to: data/discovery_20251016_130024.parquet
+Starting poll loop with 5000ms interval...
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:00:25.835029+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:00:31.800106+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:00:37.613318+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:00:43.384176+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:00:49.157127+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:00:55.028555+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:00.952341+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:06.800334+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:12.584935+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:18.509428+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:24.342575+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:30.230402+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:36.071684+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:42.077480+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:47.924895+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:53.724411+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:01:59.553415+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:05.411634+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:11.307190+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:17.150664+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:23.093211+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:28.878182+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:34.669216+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:40.410961+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:46.220958+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:51.993592+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:02:57.857588+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:03.824502+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:09.639256+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:15.426843+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:21.343208+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:27.314966+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:33.107200+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:38.938376+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:44.808556+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:50.730654+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:03:56.743537+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:02.667182+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:08.567505+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:14.516692+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:20.432926+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:26.488828+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:32.322127+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:38.134519+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:43.800652+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:49.444665+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:04:55.082259+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:00.724442+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:06.394928+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:12.006717+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:17.691370+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:23.309146+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:28.997235+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:34.685122+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:40.301964+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:46.230526+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:51.849948+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:05:57.634602+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:03.320314+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:09.078036+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:14.915746+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:20.755447+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:26.570825+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:32.260815+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:37.910134+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:43.613037+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:49.277189+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:06:54.984760+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:00.799619+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:06.587212+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:12.431354+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:18.140197+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:23.801896+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:29.521276+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:35.195964+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:40.872487+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:46.554616+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:52.186729+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:07:57.881355+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:03.595425+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:09.266640+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:15.069576+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:20.795938+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:26.468418+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:32.378939+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:38.219874+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:43.913690+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:49.699716+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:08:55.529794+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:01.317388+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:07.126786+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:12.955952+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:18.734477+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:24.535298+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:30.462979+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:36.265209+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:41.993369+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:47.832676+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:53.641814+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:09:59.445961+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:05.241602+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:11.028429+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:16.864314+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:22.747660+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:28.609211+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:34.456911+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:40.267076+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:46.143838+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:51.977512+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:10:57.835247+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:03.732581+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:09.712007+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:15.673881+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:21.511001+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:27.409143+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:33.321475+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:39.142191+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:44.917208+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:50.781531+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:11:56.664700+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:02.486455+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:08.337269+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:14.202803+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:20.134302+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:25.915702+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:31.895676+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:37.707771+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:43.545409+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:49.340524+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:12:55.232793+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:01.071603+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:06.896804+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:12.753038+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:18.564583+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:24.419059+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:30.234185+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:36.103639+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:41.941841+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:47.789190+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:53.618576+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:13:59.578648+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:05.485790+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:11.397683+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:17.387212+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:23.327732+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:28.948573+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:34.586498+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:40.237547+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:45.853101+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:51.568599+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:14:57.258212+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:02.937358+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:08.563465+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:14.437577+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:20.156556+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:25.842237+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:31.613830+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:37.293089+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:42.967794+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:48.730077+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:15:54.453781+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:00.171728+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:05.859091+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:11.633102+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:17.286864+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:22.954251+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:28.665307+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:34.394625+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:40.096171+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:45.758618+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:51.545678+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:16:58.969077+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:04.661034+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:10.353918+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:16.036928+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:21.732412+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:27.460066+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:33.173745+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:38.938322+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:44.644700+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:50.432331+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:17:56.204350+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:01.939950+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:07.784100+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:13.530391+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:19.307298+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:25.022483+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:30.720023+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:36.434938+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:42.218377+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:48.076398+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:53.828122+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:18:59.684342+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:05.481978+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:11.335659+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:17.146968+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:22.911750+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:28.739751+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:34.525883+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:40.311201+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:46.082841+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:51.896729+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:19:57.666435+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:03.502407+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:09.343757+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:15.127033+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:20.997882+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:26.845147+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:32.796730+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:38.738464+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:44.703886+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:50.559442+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:20:56.400007+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:02.387582+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:08.216747+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:14.051511+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:19.858982+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:25.735707+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:31.596711+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:37.446365+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:43.271782+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:49.125085+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:21:55.064356+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:00.879341+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:06.690829+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:12.551126+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:18.507988+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:24.356484+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:30.254959+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:36.174267+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:42.021159+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:48.138468+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:54.044122+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:22:59.945102+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:23:05.749641+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
+{"msg": "discovery_heartbeat", "timestamp": "2025-10-16T20:23:11.700223+00:00", "poll_ms": 5000, "fetched_kalshi": 50, "fetched_polymarket": 50, "total_quotes": 100}
+{"msg": "data_recorded", "saved_rows": 100}
