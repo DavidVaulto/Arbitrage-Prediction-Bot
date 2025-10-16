@@ -154,8 +154,15 @@ class PolymarketMapper(BaseVenueMapper):
         mapping_method = "abstain"
         confidence = 0.0
         
+        # AWARDS patterns (check before ELECTION since both can have "WIN")
+        if any(word in norm_title for word in ["OSCAR", "EMMY", "GRAMMY", "AWARD"]):
+            event_id = self._parse_awards_event(combined, metadata)
+            if event_id:
+                mapping_method = "deterministic"
+                confidence = 0.90
+        
         # ELECTION patterns
-        if any(word in norm_title for word in ["ELECTION", "PRESIDENT", "PRESIDENTIAL", "WIN"]):
+        elif any(word in norm_title for word in ["ELECTION", "PRESIDENT", "PRESIDENTIAL"]):
             event_id = self._parse_election_event(combined, metadata)
             if event_id:
                 mapping_method = "deterministic"
@@ -167,13 +174,6 @@ class PolymarketMapper(BaseVenueMapper):
             if event_id:
                 mapping_method = "deterministic"
                 confidence = 0.95
-        
-        # AWARDS patterns
-        elif any(word in norm_title for word in ["OSCAR", "EMMY", "GRAMMY", "AWARD"]):
-            event_id = self._parse_awards_event(combined, metadata)
-            if event_id:
-                mapping_method = "deterministic"
-                confidence = 0.90
         
         # SPORTS patterns
         elif any(word in norm_title for word in ["SUPER BOWL", "WORLD CUP", "NBA", "NFL", "MLB"]):
@@ -224,7 +224,7 @@ class PolymarketMapper(BaseVenueMapper):
     
     def _parse_election_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
         """Parse election event from text."""
-        # Pattern: ELECTION:{POSITION}:{YEAR}:{SCOPE}:{CANDIDATE}
+        # Pattern: ELECTION:{SCOPE}:{POSITION}:{YEAR}:{CANDIDATE}
         
         # Extract candidate name
         candidates = {
@@ -253,14 +253,17 @@ class PolymarketMapper(BaseVenueMapper):
         # Determine position
         position = "PRESIDENT" if "PRESIDENT" in text else "ELECTION"
         
-        # Determine scope
-        scope = "US" if any(word in text for word in ["US", "USA", "UNITED STATES", "AMERICAN"]) else "GLOBAL"
+        # Determine scope - default to US for Presidential elections
+        if "PRESIDENT" in text:
+            scope = "US"  # Presidential elections are US by default
+        else:
+            scope = "US" if any(word in text for word in ["US", "USA", "UNITED STATES", "AMERICAN"]) else "GLOBAL"
         
         return CanonicalEvent.build_event_id("ELECTION", scope, position, year, candidate)
     
     def _parse_crypto_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
         """Parse crypto price target event from text."""
-        # Pattern: CRYPTO:{ASSET}:TARGET:{PRICE}:{DATE}
+        # Pattern: CRYPTO:GLOBAL:{ASSET}_TARGET:{PRICE}:{DATE}
         
         # Extract asset
         asset = None
@@ -271,23 +274,28 @@ class PolymarketMapper(BaseVenueMapper):
         else:
             return None
         
-        # Extract price target
-        price_patterns = [
-            r'\$?([\d,]+)K',  # $150K format
-            r'\$?([\d,]+),000',  # $150,000 format
-            r'\$?([\d,]+)',  # $150000 format
-        ]
-        
+        # Extract price target - try different patterns
         price = None
-        for pattern in price_patterns:
-            match = re.search(pattern, text)
+        
+        # Try $150,000 format first
+        match = re.search(r'\$?([\d,]+),000', text)
+        if match:
+            price_str = match.group(1).replace(',', '')
+            price = int(price_str) * 1000
+        
+        # Try $150K format
+        if not price:
+            match = re.search(r'\$?([\d,]+)K', text)
             if match:
                 price_str = match.group(1).replace(',', '')
-                if 'K' in text:
-                    price = int(price_str) * 1000
-                else:
-                    price = int(price_str)
-                break
+                price = int(price_str) * 1000
+        
+        # Try plain number like $150000
+        if not price:
+            match = re.search(r'\$?([\d,]{5,})', text)  # At least 5 digits for crypto prices
+            if match:
+                price_str = match.group(1).replace(',', '')
+                price = int(price_str)
         
         if not price:
             return None
@@ -303,7 +311,7 @@ class PolymarketMapper(BaseVenueMapper):
     
     def _parse_awards_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
         """Parse awards event from text."""
-        # Pattern: AWARDS:{CEREMONY}:{CATEGORY}:{YEAR}:{NOMINEE}
+        # Pattern: AWARDS:GLOBAL:{CEREMONY}:{CATEGORY}:{YEAR}:{NOMINEE}
         
         # Extract ceremony
         ceremony = None
@@ -331,19 +339,30 @@ class PolymarketMapper(BaseVenueMapper):
         elif "DIRECTOR" in text:
             category = "BEST_DIRECTOR"
         
-        # Extract nominee (simplified - look for proper nouns)
+        # Extract nominee - look for capitalized names
+        # Split and look for consecutive capitalized words
         words = text.split()
         nominee_candidates = []
-        for i, word in enumerate(words):
-            if word.istitle() and len(word) > 2:
-                # Check if next word is also capitalized (likely a full name)
-                if i + 1 < len(words) and words[i + 1].istitle():
-                    nominee_candidates.append(f"{word}_{words[i + 1]}")
+        i = 0
+        while i < len(words):
+            word = words[i]
+            # Look for capitalized words that are likely names (not common words)
+            if word and word[0].isupper() and len(word) > 2 and word.upper() not in [
+                "WILL", "WIN", "BEST", "ACTRESS", "ACTOR", "DIRECTOR", "AT", "THE", 
+                "OSCARS", "EMMYS", "GRAMMYS", "AWARDS", "OSCAR", "EMMY", "GRAMMY"
+            ]:
+                # Check if next word is also a name
+                if i + 1 < len(words) and words[i + 1] and words[i + 1][0].isupper() and len(words[i + 1]) > 2:
+                    full_name = f"{word.upper()}_{words[i + 1].upper()}"
+                    nominee_candidates.append(full_name)
+                    i += 2
+                    continue
+            i += 1
         
         if not nominee_candidates:
             return None
         
-        nominee = nominee_candidates[0].replace(" ", "_")
+        nominee = nominee_candidates[0]
         
         return CanonicalEvent.build_event_id("AWARDS", "GLOBAL", ceremony, category, year, nominee)
     

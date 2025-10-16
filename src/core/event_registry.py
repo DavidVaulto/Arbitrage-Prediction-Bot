@@ -86,8 +86,13 @@ class CanonicalEvent:
         """
         if isinstance(event_type, EventType):
             event_type = event_type.value
+        else:
+            event_type = str(event_type).upper().strip()
+            
         if isinstance(scope, EventScope):
             scope = scope.value
+        else:
+            scope = str(scope).upper().strip()
             
         # Normalize components
         normalized = [str(c).upper().strip() for c in components]
