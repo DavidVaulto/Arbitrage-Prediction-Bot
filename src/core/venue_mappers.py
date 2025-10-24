@@ -154,8 +154,43 @@ class PolymarketMapper(BaseVenueMapper):
         mapping_method = "abstain"
         confidence = 0.0
         
+        # TECH IPO patterns (check first - high priority)
+        if any(word in norm_title for word in ["IPO", "OPENAI", "ANTHROPIC", "DEEL", "RIPPLING", "COMPANY"]):
+            event_id = self._parse_tech_ipo_event(combined, metadata)
+            if event_id:
+                mapping_method = "deterministic"
+                confidence = 0.90
+        
+        # SCIENCE/TECH patterns
+        elif any(word in norm_title for word in ["FUSION", "NUCLEAR", "ROBOT", "MARS", "AI", "TECHNOLOGY"]):
+            event_id = self._parse_science_event(combined, metadata)
+            if event_id:
+                mapping_method = "deterministic"
+                confidence = 0.85
+        
+        # ENTERTAINMENT patterns
+        elif any(word in norm_title for word in ["BOND", "JAMES BOND", "SONG", "PERFORM", "CAST", "MOVIE", "FILM"]):
+            event_id = self._parse_entertainment_event(combined, metadata)
+            if event_id:
+                mapping_method = "deterministic"
+                confidence = 0.85
+        
+        # NATURAL DISASTER patterns
+        elif any(word in norm_title for word in ["EARTHQUAKE", "CALIFORNIA", "DISASTER", "NATURAL"]):
+            event_id = self._parse_natural_disaster_event(combined, metadata)
+            if event_id:
+                mapping_method = "deterministic"
+                confidence = 0.85
+        
+        # RELIGIOUS patterns
+        elif any(word in norm_title for word in ["POPE", "CATHOLIC", "RELIGION"]):
+            event_id = self._parse_religious_event(combined, metadata)
+            if event_id:
+                mapping_method = "deterministic"
+                confidence = 0.85
+        
         # AWARDS patterns (check before ELECTION since both can have "WIN")
-        if any(word in norm_title for word in ["OSCAR", "EMMY", "GRAMMY", "AWARD"]):
+        elif any(word in norm_title for word in ["OSCAR", "EMMY", "GRAMMY", "AWARD"]):
             event_id = self._parse_awards_event(combined, metadata)
             if event_id:
                 mapping_method = "deterministic"
@@ -400,6 +435,14 @@ class PolymarketMapper(BaseVenueMapper):
             return EventType.AWARDS
         elif event_id.startswith("SPORTS:"):
             return EventType.SPORTS
+        elif event_id.startswith("COMPANY:"):
+            return EventType.OTHER  # Tech IPO
+        elif event_id.startswith("SCIENCE:"):
+            return EventType.OTHER  # Science/Tech
+        elif event_id.startswith("ENTERTAINMENT:"):
+            return EventType.OTHER  # Entertainment
+        elif event_id.startswith("NATURAL:"):
+            return EventType.OTHER  # Natural disasters
         else:
             return EventType.OTHER
     
@@ -411,6 +454,122 @@ class PolymarketMapper(BaseVenueMapper):
             return EventScope.GLOBAL
         else:
             return EventScope.OTHER
+    
+    def _parse_tech_ipo_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
+        """Parse tech IPO event from text."""
+        # Extract company names
+        companies = []
+        
+        # Common tech companies
+        tech_companies = ["OPENAI", "ANTHROPIC", "DEEL", "RIPPLING", "STRIPE", "SPACEX", "TESLA"]
+        
+        for company in tech_companies:
+            if company in text:
+                companies.append(company)
+        
+        if not companies:
+            return None
+        
+        # Extract year
+        year_match = re.search(r'20\d{2}', text)
+        year = year_match.group(0) if year_match else "2025"
+        
+        # Determine scope (US companies)
+        scope = "US"
+        
+        if len(companies) == 1:
+            # Single company IPO
+            return CanonicalEvent.build_event_id("COMPANY", scope, "IPO", companies[0], year)
+        else:
+            # Multiple companies - which IPO first
+            return CanonicalEvent.build_event_id("COMPANY", scope, "IPO_FIRST", "_VS_".join(companies), year)
+    
+    def _parse_science_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
+        """Parse science/technology event from text."""
+        # Extract year
+        year_match = re.search(r'20\d{2}', text)
+        year = year_match.group(0) if year_match else "2025"
+        
+        # Determine scope
+        scope = "GLOBAL"
+        
+        # Nuclear fusion
+        if "FUSION" in text and "NUCLEAR" in text:
+            return CanonicalEvent.build_event_id("SCIENCE", scope, "NUCLEAR_FUSION", year)
+        
+        # Mars/space exploration
+        elif "MARS" in text and "ROBOT" in text:
+            return CanonicalEvent.build_event_id("SCIENCE", scope, "MARS_ROBOT", year)
+        
+        # AI/Technology
+        elif "AI" in text or "TECHNOLOGY" in text:
+            return CanonicalEvent.build_event_id("SCIENCE", scope, "AI_BREAKTHROUGH", year)
+        
+        return None
+    
+    def _parse_entertainment_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
+        """Parse entertainment event from text."""
+        # Extract year
+        year_match = re.search(r'20\d{2}', text)
+        year = year_match.group(0) if year_match else "2025"
+        
+        # Determine scope
+        scope = "GLOBAL"
+        
+        # James Bond theme song
+        if "BOND" in text and ("SONG" in text or "THEME" in text):
+            return CanonicalEvent.build_event_id("ENTERTAINMENT", scope, "BOND_THEME_SONG", year)
+        
+        # Movie casting
+        elif "CAST" in text and any(word in text for word in ["MOVIE", "FILM"]):
+            # Extract actor name if possible
+            actor_match = re.search(r'([A-Z][A-Z\s]+)', text)
+            actor = actor_match.group(1).strip() if actor_match else "UNKNOWN"
+            return CanonicalEvent.build_event_id("ENTERTAINMENT", scope, "MOVIE_CAST", actor, year)
+        
+        # Pirates of Caribbean specific
+        elif "PIRATES" in text and "CARIBBEAN" in text:
+            return CanonicalEvent.build_event_id("ENTERTAINMENT", scope, "PIRATES_CARIBBEAN", year)
+        
+        return None
+    
+    def _parse_natural_disaster_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
+        """Parse natural disaster event from text."""
+        # Extract year
+        year_match = re.search(r'20\d{2}', text)
+        year = year_match.group(0) if year_match else "2025"
+        
+        # Determine scope and location
+        if "CALIFORNIA" in text:
+            scope = "US"
+            location = "CALIFORNIA"
+        else:
+            scope = "GLOBAL"
+            location = "GLOBAL"
+        
+        # Earthquake
+        if "EARTHQUAKE" in text:
+            # Extract magnitude if possible
+            magnitude_match = re.search(r'(\d+\.?\d*)\s*MAGNITUDE', text)
+            magnitude = magnitude_match.group(1) if magnitude_match else "8.0"
+            return CanonicalEvent.build_event_id("NATURAL", scope, "EARTHQUAKE", location, magnitude, year)
+        
+        return None
+    
+    def _parse_religious_event(self, text: str, metadata: dict[str, Any] | None) -> str | None:
+        """Parse religious event from text."""
+        # Extract year
+        year_match = re.search(r'20\d{2}', text)
+        year = year_match.group(0) if year_match else "2025"
+        
+        # Determine scope
+        scope = "GLOBAL"
+        
+        # Pope selection
+        if "POPE" in text:
+            return CanonicalEvent.build_event_id("RELIGIOUS", scope, "POPE_SELECTION", year)
+        
+        return None
 
 
 class KalshiMapper(BaseVenueMapper):
